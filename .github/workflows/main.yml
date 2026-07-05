@@ -4,13 +4,11 @@ on: [push]
 
 jobs:
   build:
-  
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-      - name: Run Feed Generator
-      - user: planetoftheweb/generator@main
 
-      
+      - name: Run Feed Generator
+        uses: planetoftheweb/generator@main
